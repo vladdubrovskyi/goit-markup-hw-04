@@ -365,13 +365,51 @@ img {
   margin-left: 10px;
 }
 
-.soc-list-icon {
-}
 .soc-list-link:hover,
 .soc-list-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: #ffffff;
+}
+
+/* -------------------------Clients------------------------ */
+
+.clients-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  padding-top: var(--typical-padding);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  padding-bottom: var(--typical-padding);
+  justify-content: center;
+  text-align: center;
+}
+
+.clients-list-item + .clients-list-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* -------------------------Portfolio------------------------ */
@@ -413,6 +451,8 @@ img {
 .portfolio-navigation-item .button:focus {
   color: var(--main-background-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list {
@@ -426,6 +466,11 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-content {
@@ -490,4 +535,46 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
+}
+
+.flex-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.flex-address {
+  margin-right: 70px;
+}
+
+.connect-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  margin-bottom: 20px;
+}
+
+.connect-list {
+  display: flex;
+}
+
+.connect-list-item + .connect-list-item {
+  margin-left: 10px;
+}
+
+.connect-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-background-color);
+}
+
+.connect-link:hover,
+.connect-link:focus {
+  background-color: var(--accent-color);
 }
