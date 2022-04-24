@@ -374,19 +374,22 @@ img {
 
 /* -------------------------Clients------------------------ */
 
+.clients {
+  padding-top: var(--typical-padding);
+  padding-bottom: var(--typical-padding);
+}
+
 .clients-title {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-top: var(--typical-padding);
   margin-bottom: 50px;
 }
 
 .clients-list {
   display: flex;
-  padding-bottom: var(--typical-padding);
   justify-content: center;
   text-align: center;
 }
